@@ -111,9 +111,10 @@ ALTER TABLE ONLY public.students ALTER COLUMN id SET DEFAULT nextval('public.stu
 --
 
 COPY public.projects (id, title, description, max_grade) FROM stdin;
-1	Markov	Tweets generated from Markov chains	50
-2	Markov1	Tweets generated from Markov chains	50
-3	Markov2	Tweets generated from Markov chains	50
+4	Markov	Tweets generated from Markov chains	50
+5	Blockly	Programmatic Logic Puzzle Game	100
+6	Blockly2	Programmatic Logic Puzzle Game2	80
+7	Markov2	Tweets generated from Markov chains2	70
 \.
 
 
@@ -131,7 +132,7 @@ COPY public.students (id, first_name, last_name, github) FROM stdin;
 -- Name: projects_id_seq; Type: SEQUENCE SET; Schema: public; Owner: hackbright
 --
 
-SELECT pg_catalog.setval('public.projects_id_seq', 3, true);
+SELECT pg_catalog.setval('public.projects_id_seq', 36, true);
 
 
 --
